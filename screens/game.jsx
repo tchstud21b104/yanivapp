@@ -1,7 +1,7 @@
 import * as React from "react";
 import { Text, View, StyleSheet, TouchableOpacity, Image } from "react-native";
 import Deck from "../components/deck";
-import MyHand from "../components/myHand";
+import MyTable from "../components/MyTable";
 import Pile from "../components/pile";
 import RivalHand from "../components/rivalHand";
 import YanivButton from "../components/yanivButton";
@@ -35,7 +35,7 @@ export default function Game() {
         <Pile />
         <YanivButton />
       </View>
-      <MyHand />
+      <MyTable />
     </View>
   );
 }

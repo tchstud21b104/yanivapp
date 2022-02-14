@@ -21,8 +21,9 @@ export default function MyHand() {
 
   return (
     <View style={styles.container}>
-      {cards.map((card) => (
+      {cards.map((card, index) => (
         <Pressable
+          key={index}
           style={[styles.card, card.selected ? styles.selectedCard : false]}
           onPress={() => toggleSelectCard(card)}
         >

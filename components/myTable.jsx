@@ -1,19 +1,13 @@
 import * as React from "react";
 import { Text, View, StyleSheet, Image, Pressable } from "react-native";
-import Card from "./card";
+import MyHand from "../components/myHand";
+import PlaterInfo from "./playerInfo";
 
-export default function RivalHand() {
-  const cardsAmount = 5;
-  //   const cards = new Array(cardsAmount);
-  const cards = [0, 0, 0, 0, 0];
-
+export default function MyTable() {
   return (
     <View style={styles.container}>
-      {cards.map((card, index) => (
-        <View key={index}>
-          <Card id={"gray_back"} />
-        </View>
-      ))}
+      <PlaterInfo />
+      <MyHand />
     </View>
   );
 }
